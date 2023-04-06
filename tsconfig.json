@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "watch": true,
+    "incremental": true,
+    "target": "ESNext",
+    "strict": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "lib": [],
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "useUnknownInCatchVariables": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "graphql-resource-exhaustion-attack",
+  "version": "1.0.0",
+  "description": "Contains code examples demonstrating examples from my article on Mitigating Resource-Exhaustion Attacks (DDoS) on GraphQL APIs: Best Practices and Strategies",
+  "main": "build/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "npx nodemon -r dotenv/config build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huboh/graphql-resource-exhaustion-attack.git"
+  },
+  "keywords": [
+    "graphql",
+    "ddos",
+    "resource-exhaustion"
+  ],
+  "author": "huboh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huboh/graphql-resource-exhaustion-attack/issues"
+  },
+  "homepage": "https://github.com/huboh/graphql-resource-exhaustion-attack#readme",
+  "dependencies": {
+    "@apollo/server": "^4.6.0",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.3"
+  }
+}
