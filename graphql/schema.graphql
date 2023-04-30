@@ -1,0 +1,38 @@
+"""
+the Date type represent date in ISO format
+"""
+scalar Date
+
+"""
+the User type defines queryable fields for every User in our app
+"""
+type User {
+  id: ID!
+  role: Role!
+  name: String
+  email: String!
+  posts(filter: UserPostsFilterInput): [Post!]! # check `/graphql/inputs.graphql` for input types
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+"""
+the Post type defines queryable fields for every Post in our app
+"""
+type Post {
+  id: ID!
+  title: String!
+  author: User!
+  content: String!
+  createdAt: Date!
+  updatedAt: Date!
+  publishedAt: Date!
+  isPublished: Boolean!
+}
+
+# The "Query" type is special: it lists all of the available queries that clients can execute, along with the return type for each.
+type Query {
+  me: User
+  user(userId: ID): User
+  post(userId: ID): Post
+}
