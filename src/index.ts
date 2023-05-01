@@ -2,12 +2,23 @@ import typeDefs from './graphql/schema';;
 import resolvers from './graphql/resolvers';
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
+import { createComplexityRule, simpleEstimator } from 'graphql-query-complexity';
 
 const port = 4000;
 const server = new ApolloServer({
   typeDefs, // our GraphQl schema definition
   resolvers, // schema resolvers
-  introspection: true // enables GraphIQl playground on the port the server is listening on
+  introspection: true, // enables GraphIQl playground on the port the server is listening on
+  validationRules: [
+    createComplexityRule({
+      maximumComplexity: 50,
+      estimators: [
+        simpleEstimator({
+          defaultComplexity: 1
+        })
+      ]
+    })
+  ]
 });
 
 // Passing an ApolloServer instance to the `startStandaloneServer` function:
