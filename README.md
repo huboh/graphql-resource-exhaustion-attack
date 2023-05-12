@@ -68,4 +68,4 @@ This repository is licensed under the MIT license. See the [LICENSE](/LICENSE) f
 
 ## References
 
-- [Mitigating Resource-Exhaustion Attacks on GraphQL Servers (DDoS)](<http://localhost:3000/articles/Mitigating-Resource-Exhaustion-Attacks-(DDoS)-on-GraphQL-APIs-Best-Practices-and-Strategies>)
+- [Mitigating Resource-Exhaustion Attacks on GraphQL Servers (DDoS)](<http://www.knowledgemusa.com/articles/Mitigating-Resource-Exhaustion-Attacks-(DDoS)-on-GraphQL-APIs-Best-Practices-and-Strategies>)
