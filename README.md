@@ -64,7 +64,7 @@ If you have additional code examples or suggestions for improving the existing e
 
 ## License
 
-This repository is licensed under the MIT license. See the LICENSE file for details.
+This repository is licensed under the MIT license. See the [LICENSE](/LICENSE) file for details.
 
 ## References
 
